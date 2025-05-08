@@ -23,3 +23,19 @@ function toggleFAQ(button) {
   answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
 }
 }
+  const toggle = document.getElementById('navToggle');
+  const nav = document.getElementById('navLinks');
+  const navLinks = nav.querySelectorAll('a');
+
+  // Toggle menu open/close
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+  });
+
+  // Close menu when any link is clicked
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('nav-active');
+    });
+  });
+
