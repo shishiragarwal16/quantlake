@@ -464,7 +464,7 @@
 html {
   scroll-behavior: smooth;
 }
-#why,#solutions, #projects,#contact{
+section{
   scroll-margin-top: 50px;
 }
 
