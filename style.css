@@ -475,16 +475,24 @@ section{
   position: relative;
 }
 
+.scroll-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
 .scroll-track {
   display: flex;
   gap: 2rem;
   animation: scroll-left 30s linear infinite;
   width: max-content;
+  will-change: transform;
+  pointer-events: auto;
 }
 
 .linkedin-feed-scroll:hover .scroll-track {
   animation-play-state: paused;
 }
+
 
 .post-card {
   position: relative;
