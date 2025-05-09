@@ -468,6 +468,69 @@ section{
   scroll-margin-top: 50px;
 }
 
+.linkedin-feed-scroll {
+  overflow: hidden;
+  background: #f9f9f9;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+}
+
+.linkedin-feed-scroll:hover .scroll-track {
+  animation-play-state: paused;
+}
+
+.post-card {
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+  background: #007d43;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+  font-size: 1rem;
+  flex-shrink: 0;
+  text-decoration: none;
+  text-shadow: white;
+  font-weight: bold;
+  color: white ;
+  transition: transform 0.2s;
+}
+
+.post-card:hover {
+  transform: scale(1.02);
+}
+
+.post-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.2s;
+  border-radius: 0 0 8px 8px;
+}
+
+.post-card:hover .overlay {
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
 
 
   
