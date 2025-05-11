@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="\images\QL.jpg" type="png" />
+  <title>Certifyr | By QuantLake</title>
+  <link rel="stylesheet" href="certifyrcss.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container nav-wrapper">
+          <div class="logo">
+            <a href="/"><img src="images/quantlake logo.png" alt="QuantLake Logo" /></a>
+          </div>
+      
+          <!-- Hamburger Menu Button -->
+          <button class="nav-toggle" id="navToggle">&#9776;</button>
+      
+          <!-- Navigation Links -->
+          <ul class="nav-links" id="navMenu">
+            <li><a href="#what">What It Does</a></li>
+            <li><a href="#verify">QR Verification</a></li>
+            <li><a href="#emailing">Emailing</a></li>
+            <li><a href="#usecases">Use Cases</a></li>
+            <li><a href="#contact" class="btn-primary" style="color:white">Get Started</a></li>
+          </ul>
+        </div>
+      </header>
+      
+
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <div class="container">
+      <h1>Verification, Automated.</h1>
+      <p>Generate, secure, and verify digital certificates — effortlessly.</p>
+      <a href="#contact" class="btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <section class="sub-brand-banner">
+    <p>A collaborative QuantLake product designed for scalable verification systems.</p>
+  </section>
+
+  <!-- What It Does -->
+  <section id="what" class="section fade-up">
+    <div class="container">
+      <h2>What Certifyr Handles</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Generate</h3>
+          <p>Personalized certificates from templates with recipient-specific data.</p>
+        </div>
+        <div class="feature">
+          <h3>Secure</h3>
+          <p>Each certificate includes a tamper-proof QR code for instant lookup.</p>
+        </div>
+        <div class="feature">
+          <h3>Distribute</h3>
+          <p>Automatically deliver certificates to each user’s inbox.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="section fade-up">
+    <div class="container">
+      <h2>Overview</h2>
+      <p>
+        Every certificate issued through Certifyr comes with a unique QR code embedded into its layout. Scanning it—or visiting the link—directs you to a real-time verification page where authenticity is instantly confirmed.
+      </p>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section light-bg fade-up">
+    <div class="container">
+      <h2>How It Works</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Scan or Enter Code</h3>
+          <p>Users can scan the embedded QR code using a phone camera or manually enter the alphanumeric key on our site.</p>
+        </div>
+        <div class="feature">
+          <h3>Instant Lookup</h3>
+          <p>Verification happens instantly. If valid, you’ll see recipient info, course name, and issue date. If not, a clear invalid message is shown.</p>
+        </div>
+        <div class="feature">
+          <h3>Reliable Validation</h3>
+          <p>Our frontend handles the code seamlessly, providing a fast and fluid verification experience that reflects modern trust standards.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="container image-grid">
+        <img src="images/certifyr1.jpeg" alt="Intern Working">
+        <img src="images/certifyr2.jpeg" alt="Team Collaboration">
+        <img src="images/certifyr3.jpeg" alt="Developer Setup">
+  
+      </div>
+  </section>
+
+  <!-- Why It's Secure -->
+  <section class="section fade-up">
+    <div class="container">
+      <h2>Why It's Secure</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Unique Identifiers</h3>
+          <p>Each certificate is assigned a randomly generated UUID, making it extremely difficult to forge or duplicate.</p>
+        </div>
+        <div class="feature">
+          <h3>Trusted Verification</h3>
+          <p>Verification data is protected, reliable, and accessible only through authorized certificate links. Tamper detection is built in by design.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QR Verification -->
+  <section id="verify" class="section light-bg fade-up" style="background-color:black; color:white">
+    <div class="container">
+      <h2>Scan. Verify. Done.</h2>
+      <p>Each certificate embeds a QR code that verifies recipient identity, course, and authenticity in real time.</p>
+    </div>
+  </section>
+
+  <!-- Emailing -->
+  <section id="emailing" class="section fade-up">
+    <div class="container">
+      <h2>Automated Outreach</h2>
+      <p>Certifyr sends secure, personalized certificates to each participant's inbox. Simple. Scalable. Trackable.</p>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section id="usecases" class="section light-bg fade-up">
+    <div class="container">
+      <h2>Who’s Using Certifyr?</h2>
+      <ul class="usecases">
+        <li>EdTech Platforms</li>
+        <li>Bootcamps & Accelerators</li>
+        <li>Online Course Creators</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta-section fade-in">
+    <div class="container">
+      <h2>Certify Like You Mean It</h2>
+      <p>Book a demo or start generating verified certificates today.</p>
+  
+      <form class="contact-form" action="https://formspree.io/f/mkgrvbwp" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="company" placeholder="Company (optional)" />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Email Address" required />
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Phone Number" />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 QuantLake. All rights reserved. | Built with data, verified with Certifyr.</p>
+    </div>
+  </footer>
+  <script>
+
+        const toggle = document.getElementById('navToggle');
+        const nav = document.getElementById('navMenu');
+        const navLinks = nav.querySelectorAll('a');
+      
+        // Toggle menu open/close
+        toggle.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      
+        // Close menu when any link is clicked
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            nav.classList.remove('active');
+          });
+        });
+  
+      
+  </script>
+  
+
+</body>
+</html>
